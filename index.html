@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/indexStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+</head>
+<body>
+    <!-- NavBar\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-xl">
+            <img src="/Logo BN.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">BFviaggi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  VIAGGI
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#newYork">NEW YORK</a></li>
+                  <li class="divider"></li>
+                  <li><a class="dropdown-item" href="#parigi">PARIGI</a></li>
+                  <li class="divider"></li>
+                  <li><a class="dropdown-item" href="#londra">LONDRA</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#recensioniId">RECENSIONI</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#newsletterId">NEWSLETTER</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+     <!--\\\\\\\CAROSELLO\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url(https://effebl.altervista.org/wp-content/uploads/elementor/thumbs/NY9-qp9xc7x891syfhxch9xwuko5wujjszri0ptdafec20.jpg);">
+          <div class="carousel-caption d-md-block">
+            <h5 class="titoloSlide">Viaggio a New York</h5>
+            <p class="paraSlide">La grande mela, la città che non dorme mai.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url(https://effebl.altervista.org/wp-content/uploads/elementor/thumbs/LO4-qp9xbvpbs7c88kf3gmnrg5r66u7s0xezn1c21twgaw.jpg);">
+          <div class="carousel-caption  d-md-block">
+            <h5 class="titoloSlide">Viaggio a Londra</h5>
+            <p class="paraSlide">Città centro commerciale, bancario e culturale fra i maggiori del mondo.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url(https://effebl.altervista.org/wp-content/uploads/elementor/thumbs/PA3-qp9xcaqqks5r9d47vggjjoivn2p08380w51xb5sp5c.jpg);">
+          <div class="carousel-caption  d-md-block">
+            <h5 class="titoloSlide">Viaggio a Parigi</h5>
+            <p class="paraSlide">Città della Luce, è rinomata per i suoi monumenti e le sue attrazioni iconiche.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <!--ICONE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <section class="sezioneIcone backgroundSezione text-center paddingDiv">
+      <div class="container">
+        <div class="row">
+          <div class="paraIco col-md-4">
+            <div class="iconaIco">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M432 230.7a79.44 79.44 0 00-32-6.7H112a79.51 79.51 0 00-32 6.69A80.09 80.09 0 0032 304v112a16 16 0 0032 0v-8a8.1 8.1 0 018-8h368a8.1 8.1 0 018 8v8a16 16 0 0032 0V304a80.09 80.09 0 00-48-73.3zM376 80H136a56 56 0 00-56 56v72a4 4 0 005.11 3.84A95.5 95.5 0 01112 208h4.23a4 4 0 004-3.55A32 32 0 01152 176h56a32 32 0 0131.8 28.45 4 4 0 004 3.55h24.46a4 4 0 004-3.55A32 32 0 01304 176h56a32 32 0 0131.8 28.45 4 4 0 004 3.55h4.2a95.51 95.51 0 0126.89 3.85A4 4 0 00432 208v-72a56 56 0 00-56-56z"/></svg>
+            </div>
+            <h3 class="titoloPara">Migliori Hotel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium labore, dicta expedita similique architecto rem dolorum. Repudiandae quas facilis dolorum.</p>
+          </div>
+          <div class="paraIco col-md-4">
+            <div class="iconaIco">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M312.55 479.9l-56.42-114-44.62-57a72.37 72.37 0 01-10.06-36.9V143.64H217a40 40 0 0140 40v182.21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M127.38 291.78v-74.07s37-74.07 74.07-74.07" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M368.09 291.78a18.49 18.49 0 01-10.26-3.11L297.7 250a21.18 21.18 0 01-9.7-17.79v-23.7a5.65 5.65 0 018.69-4.77l81.65 54.11a18.52 18.52 0 01-10.29 33.93zM171.91 493.47a18.5 18.5 0 01-14.83-7.41c-6.14-8.18-4-17.18 3.7-25.92l59.95-74.66a7.41 7.41 0 0110.76 2.06c1.56 2.54 3.38 5.65 5.19 9.09 5.24 9.95 6 16.11-1.68 25.7-8 10-52 67.44-52 67.44-2.62 2.98-7.23 3.7-11.09 3.7z"/><circle cx="257" cy="69.56" r="37.04" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+              </div>
+            <h3 class="titoloPara">Giuda Turistica</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium labore, dicta expedita similique architecto rem dolorum. Repudiandae quas facilis dolorum.</p>
+          </div>
+            <div class="paraIco col-md-4">
+              <div class="iconaIco">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M400 32H112a48 48 0 00-48 48v320a47.91 47.91 0 0016 35.74V454a26 26 0 0026 26h28a26 26 0 0026-26v-6h192v6a26 26 0 0026 26h28a26 26 0 0026-26v-18.26A47.91 47.91 0 00448 400V80a48 48 0 00-48-48zM147.47 399.82a32 32 0 1128.35-28.35 32 32 0 01-28.35 28.35zM236 288H112a16 16 0 01-16-16V144a16 16 0 0116-16h124a4 4 0 014 4v152a4 4 0 01-4 4zm20-192H112.46c-8.6 0-16-6.6-16.44-15.19A16 16 0 01112 64h287.54c8.6 0 16 6.6 16.44 15.19A16 16 0 01400 96H256zm20 32h124a16 16 0 0116 16v128a16 16 0 01-16 16H276a4 4 0 01-4-4V132a4 4 0 014-4zm60.18 243.47a32 32 0 1128.35 28.35 32 32 0 01-28.35-28.35z"/></svg>
+                </div>
+            <h3 class="titoloPara">Trasporti Inclusi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium labore, dicta expedita similique architecto rem dolorum. Repudiandae quas facilis dolorum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="paddingDiv backgroundSezione"></div>
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <!--descrizione\\\\\\\\\\\\\\\\-->
+   
+    <div id="newYork"></div>
+    <hr>
+    <section  class="descrizione">
+      <div class="container-fluid">
+        <div class="row">
+          <div  class="imgCity col-lg-6 order-lg-2" style="background-image: url(https://effebl.altervista.org/wp-content/uploads/elementor/thumbs/NY10-qp9xc7x7n4eqmhuh9tibsj8ze6fqh45n2tis7q5q1g.jpg);">
+          </div>
+          <div class="desCity col-lg-6 order-lg-1">
+              <h3 class="titoloCity">New York</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eligendi minima perspiciatis numquam ipsa! Vero sequi eius deserunt non sed esse. Tempore eligendi, assumenda nisi ratione est consectetur impedit repellat?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nostrum vero iure, ipsum ea impedit nam odit, fugit dolore eveniet deleniti labore, porro dolores cupiditate exercitationem veniam ad magni libero?</p>
+          
+              <!-- Button trigger modal \\\\\\\\\\\\\\\\-->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Itinerario
+                  </button>
+
+                  <!-- Modal New York -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Settimana a New York</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <ul>
+                            <li>Giorno 1: Manhattan Midtown</li>
+                            <li>Giorno 2: Lower Manhattan e Statua della Libertà</li>
+                            <li>Giorno 3: Central Park e Musei</li>
+                            <li>Giorno 4: Brooklyn</li>
+                            <li>Giorno 5: High Line e Chelsea</li>
+                            <li>Giorno 6: Giornata Culturale e Shopping</li>
+                            <li>Giorno 7: Quartieri Esclusivi e Relax</li>
+                        </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                       
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- \\\\\\\\\\\\\\\\\\\\\\\\-->
+            </div>
+        </div>
+       
+        <div id="parigi"></div>
+        <hr>
+        <div class="row">
+          <div  class="imgCity col-lg-6" style="background-image: url(https://effebl.altervista.org/wp-content/uploads/elementor/thumbs/PA5-qp9xccmf77ze1jqiptz1p1hgvrwdvha5pd2sot7d6w.jpg);">
+          </div>
+          <div class="desCity col-lg-6">
+            <h3 class="titoloCity">Parigi</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis itaque commodi eum nemo voluptate recusandae odio culpa earum, porro praesentium omnis tempore unde tempora ducimus voluptatibus perspiciatis nulla quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, excepturi. Fugit, quos. Cumque, voluptates. Quod, voluptatem. Voluptate, quae. Doloremque, quam.</p>
+          
+          <!-- Button trigger modal \\\\\\\\\\\\\\\\-->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Itinerario
+          </button>
+
+          <!-- Modal Parigi -->
+          <div class="modal fade" id="exampleModal2" tabindex="-2" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel2">Settimana a Parigi</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Giorno 1: La Torre Eiffel, Champ de Mars, Musée d’Orsay, Montmartre</li>
+                    <li>Giorno 2: Louvre, Jardin de Tuileries, Champs-Élysées, crociera sulla Senna</li>
+                    <li>Giorno 3: Marais, Centre Pompidou, Notre-Dame, Quartiere Latino, Saint-Germain-des-Prés</li>
+                    <li>Giorno 4: Les Invalides, Place Vendôme, Pigalle, Moulin Rouge</li>
+                    <li>Giorni 5 e 6: Disneyland, Versailles, altre attrazioni a Parigi</li>
+                    <li>Giorno 7 e oltre: attrazioni aggiuntive a Parigi</li>
+                 
+                </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\-->
+          
+          </div>
+        </div>
+       
+        <div id="londra"></div>
+        <hr>
+        <div class="row">
+          <div  class="imgCity col-lg-6 order-lg-2" style="background-image: url(https://effebl.altervista.org/wp-content/uploads/elementor/thumbs/LO3-qp9xburghwefp1s8t4tb8qy6urs1nlepb1au1rrtyw.jpg);">
+          </div>
+          <div class="desCity col-lg-6 order-lg-1">
+            <h3 class="titoloCity">Londra</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam numquam est commodi nisi consectetur quis quos eos, repellat molestiae beatae illo pariatur laborum atque aperiam, officia iste eveniet sit consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, excepturi. Fugit, quos. Cumque, voluptates. Quod, voluptatem. Voluptate, quae. Doloremque, quam.</p>
+          
+          <!-- Button trigger modal \\\\\\\\\\\\\\\\-->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            Itinerario
+          </button>
+
+          <!-- Modal Londra-->
+          <div class="modal fade" id="exampleModal3" tabindex="-3" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel3">Settimana a Londra</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Giorno 1: Torre di Londra, Tower Bridge, Cattedrale di Sant Paul, Tate Modern, Millennium Bridge</li>
+                    <li>Giorno 2: Buckingham Palace, Westminster Abbey, Parlamento, Big Ben e National Gallery, West End</li>
+                    <li>Giorno 3: British Museum, Covent Garden, South Bank</li>
+                    <li>Giorno 4: Camden Town, Museo di Storia Naturale (South Kensington), Royal Albert Hall</li>
+                    <li>Giorno 5, 6, 7: Attrazioni aggiuntive e alternative diurne e serali</li>
+                
+                </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\-->
+          
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <!--Recensioni\\\\\\\\\\\\\\\\\-->
+    <div id="recensioniId" class="backgroundSezione paddingDiv"></div>
+    <section class="recensioni backgroundSezione text-center paddingDiv">
+      <div class="container">
+        <h2 class="titoloNewsletter mb-5">Cosa pensano i nostri clienti</h2>
+        <div class="row">
+          <div class="personaRec col-lg-4">
+            <img class="imgPersona rounded-circle mb-3" src="https://effebl.altervista.org/wp-content/uploads/elementor/thumbs/christian-buehner-DItYlc26zVI-unsplash-qpg6pmk7j8onddxt2ugmb6l2cq5uprsb7f4y59g3cw.jpg" alt="">
+            <h3 class="titoloPara">Luca Neri</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium labore, dicta expedita similique architecto rem dolorum. Repudiandae quas facilis dolorum.</p>
+          </div>
+          <div class="personaRec col-lg-4">
+            <img class="imgPersona rounded-circle mb-3" src="https://effebl.altervista.org/wp-content/uploads/elementor/thumbs/stephanie-liverani-Zz5LQe-VSMY-unsplash-qpg6pqbkaktsntscgw34l5mwq9nbkk78jxqw2daio0.jpg" alt="">
+            <h3 class="titoloPara">Anna Bianchi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium labore, dicta expedita similique architecto rem dolorum. Repudiandae quas facilis dolorum.</p>
+          </div>
+          <div class="personaRec col-lg-4">
+            <img class="imgPersona rounded-circle mb-3" src="https://effebl.altervista.org/wp-content/uploads/elementor/thumbs/ivana-cajina-dnL6ZIpht2s-unsplash-qpg6pni1q2pxozwfxcv8vociy417xgw1jjsfmjep6o.jpg" alt="">
+            <h3 class="titoloPara">Alice Rossi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium labore, dicta expedita similique architecto rem dolorum. Repudiandae quas facilis dolorum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <!--Newsletter\\\\\\\\\\\\\\\\\-->
+    <div id="newsletterId" class="paddingDiv"></div>
+    <section class="newsletter text-center paddingDiv">
+      <div class="container">
+     
+          <div class="col-xl-9 mx-auto">
+            <h2 class="titoloNewsletter mb-5">Iscriviti alla nostra newsletter</h2>
+          </div>
+      
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto"> 
+              <form>
+                <div class="form-row mb-5">
+                  <div class="input-group mb-3 col-12 col-md-9 mb-2 mb-md-0">
+                
+                      
+                      <input type="text" class="form-control" placeholder="Inserisci la tua email" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      <button class="btn btn-primary btn-xl" type="button" id="button-addon1">Invia</button>
+                    </div>
+                  </div>
+                
+                    
+                 
+                </div>
+              </form>
+            </div>  
+       
+      </div>
+    </section>
+    <div class="paddingDiv"></div>
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <!--Footer\\\\\\\\\\\\\\\\\\\\\-->
+  
+
+<!--footer starts from here-->
+<footer id="footerId" class="footer">
+<div class="container bottom_border">
+<div class="row">
+<div class="col-12 col-md-6 col-lg-3 col">
+            <img id="logoFinale" src="/Logo BN.png" alt="Logo" class="d-inline-block align-text-top me-3">
+            <h3 class="titoloFinale headin5_amrc col_white_amrc">BFviaggi</h3>
+            
+
+</div>
+
+
+<div class="col-12 col-md-6 col-lg-3 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Dove siamo</h5>
+  <!--headin5_amrc-->
+  <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+  <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+  <p><i class="fa fa-phone"></i>  +39-9999878398  </p>
+  <p><i class="fa fa fa-envelope"></i> fabio.b77@libero.it </p>
+  
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class="col-12 col-md-6 col-lg-3 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Collegamenti</h5>
+<!--headin5_amrc-->
+<ul class="footer_ul_amrc">
+<li><a href="#">Home</a></li>
+<li><a href="#newYork">New York</a></li>
+<li><a href="#parigi">Parigi</a></li>
+<li><a href="#londra">Londra</a></li>
+<li><a href="#recensioniId">Recensioni</a></li>
+<li><a href="#newsletterId">Newsletter</a></li>
+</ul>
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class="col-12 col-md-6 col-lg-3 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Link Utili</h5>
+<!--headin5_amrc ends here-->
+
+<ul class="footer_ul2_amrc">
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Sito portfolio del creatore di questa pagina...<br><a href="http://portfoliofb.altervista.org" target="_blank">portfoliofb.altervista.org</a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Sito raccoglitore di immagini dell creatore di questa pagina...<br><a href="http://effebl.altervista.org" target="_blank">effebl.altervista.org</a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Sito di ecommerce del creatore di questa pagina...<br><a href="http://vendotutto.altervista.org" target="_blank">vendotutto.altervista.org</a></p></li>
+</ul>
+<!--footer_ul2_amrc ends here-->
+</div>
+</div>
+</div>
+
+
+<div class="container">
+
+<!--foote_bottom_ul_amrc ends here-->
+<p class="text-center mt-4">Copyright @2024 | Designed With by <a href="#">BFviaggi</a></p>
+
+
+<!--social_footer_ul ends here-->
+</div>
+
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
